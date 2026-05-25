@@ -133,3 +133,7 @@ To build upon this foundation and transform it into a production-grade surveilla
 * **Expanding Datasets:** Integrating larger scale public benchmarks (such as the UBI-Fights or Movie Fights datasets) to improve the feature robustness and overall generalization capabilities of the sequential deep learning models.
 * **Hybrid Multimodal Architectures:** Fusing structural pose-tracking matrices alongside raw optical flow or spatial vision models (like 3D CNNs) to unify motion context, environmental semantics, and human interaction cues.
 * **Adaptive Sampling:** Implementing modern dynamic padding or temporal segmentation algorithms to capture fluid frame patterns without risking key frame drops.
+
+## Authors
+
+- [@Karthikkosuri](https://github.com/Karthikkosuri)
