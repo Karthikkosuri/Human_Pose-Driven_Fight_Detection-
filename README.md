@@ -66,4 +66,4 @@ The Random Forest is a traditional, ensemble machine learning algorithm that bui
 
 
 ## Workflow of Model
-<img src="" alt="Project Diagram" width = "800"/>
+<img src="https://github.com/Karthikkosuri/Human_Pose-Driven_Fight_Detection-/blob/main/Architecture%20Diagrams/work%20flow%20diagram.drawio.png?raw=true" alt="Project Diagram" width = "800"/>
