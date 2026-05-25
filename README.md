@@ -51,3 +51,6 @@ The Random Forest is a traditional, ensemble machine learning algorithm that bui
 
 ## Dataset
 [Download the dataset used in this experiment from here !](https://github.com/seymanurakti/fight-detection-surv-dataset)
+
+## Trained Models:
+[Download the trained models generated in this project here !](https://drive.google.com/drive/folders/1-ChCXGILZO1btX4P2XTTB_7Q_NlW1gry?usp=sharing)
