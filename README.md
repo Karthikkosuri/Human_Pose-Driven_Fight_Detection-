@@ -63,3 +63,7 @@ The Random Forest is a traditional, ensemble machine learning algorithm that bui
 | LSTM Model | 0.7016 (70.16%) | 0.75 (75%) |
 | Bi-LSTM Model | 0.6179 (61.79%) | 0.65 (65%) |
 | Random Forest Classifier | 0.95 (95%) | 0.63 (63%) |
+
+
+## Workflow of Model
+<img src="" alt="Project Diagram" width = "800"/>
