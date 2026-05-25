@@ -47,3 +47,7 @@ The Random Forest is a traditional, ensemble machine learning algorithm that bui
 * **Configuration:** * Implemented using `100 estimators` (100 independent decision trees).
   * Rather than processing frames sequentially, the sequential input matrix is flattened into a single vector of 3,960 features (`30 frames × 132 features`) per video.
 * **Performance:** Achieved a baseline accuracy of **63%**. While computationally light, fast to train, and robust with high-dimensional data, it lacks the structure to capture the temporal motion or frame-to-frame sequence shifts inherent in a fight scene.
+
+
+## Dataset
+[Download the dataset used in this experiment from here !](https://github.com/seymanurakti/fight-detection-surv-dataset)
