@@ -55,6 +55,45 @@ The Random Forest is a traditional, ensemble machine learning algorithm that bui
 ## Trained Models:
 [Download the trained models generated in this project here !](https://drive.google.com/drive/folders/1-ChCXGILZO1btX4P2XTTB_7Q_NlW1gry?usp=sharing)
 
+## 🚀 How to Use This Repository
+
+### 1. Clone the Repository
+To get a local copy of this project up and running on your desktop, open Git Bash or your terminal and run:
+```bash
+git clone [https://github.com/YOUR_GITHUB_USERNAME/Fight_Pose_Project.git](https://github.com/YOUR_GITHUB_USERNAME/Fight_Pose_Project.git)
+cd Fight_Pose_Project
+```
+Install the necessary dependencies from the requirements.txt file.
+```bash
+pip install -r requirements.txt
+```
+Run the provided Jupyter notebooks to preprocess the data, train models, and make predictions.
+
+After downloading the repository, :
+```bash
+Fight_Pose_Project
+├── .git                                 # Hidden Git tracking repository folder
+├── architecture_diagrams                # Directory containing model flow diagrams
+│   ├── bi_lstm_model.png                # Architecture flow for the Bidirectional LSTM network
+│   ├── lstm_model.png                   # Architecture flow for the standard LSTM network
+│   └── random_forest.png                # Structural diagram for the flattened Random Forest baseline
+│
+├── Data                                 # Data management directory
+│   ├── Raw                              # Video clips categorized by activity scenario (Fight vs. No Fight)
+│   └── Poses                            # Extracted coordinates tracking human joint movements
+│
+├── models                               # Saved weights and parameters for compiled models
+│   ├── bi_lstm_model.h5                 # Trained and serialized Bidirectional LSTM model
+│   ├── fight_detection_lstm.h5          # Trained and serialized standard LSTM model
+│   └── random_forest_model.pkl          # Pickled baseline Random Forest classifier model
+│
+├── data_preprocessing.py                # Script for skeleton tracking, zero padding, and video downsampling
+├── train_models.py                      # Python pipeline script to compile and train ML/DL models
+├── test_prediction.py                   # Prediction evaluation module for classifying new input sequences
+├── requirements.txt                     # Text file specifying exact development dependencies and libraries
+└── README.md                            # Main markdown repository project documentation page
+```
+
 
 ## 📊 Evaluation Results
 
