@@ -106,3 +106,30 @@ Fight_Pose_Project
 
 ## Workflow of Model
 <img src="https://github.com/Karthikkosuri/Human_Pose-Driven_Fight_Detection-/blob/main/Architecture%20Diagrams/work%20flow%20diagram.drawio.png?raw=true" alt="Project Diagram" width = "800"/>
+
+## 🏁 Conclusion & Future Work
+
+### Summary of Findings
+This project successfully demonstrated the effectiveness of utilizing pose-based feature extraction for automated violence and fight detection in video surveillance sequences. By analyzing spatial-temporal arrangements of human skeletal joints rather than raw pixels, the system offers a lightweight, resource-efficient alternative to traditional computationally heavy surveillance models. 
+
+Key architectural takeaways from this study include:
+* **LSTM Networks** proved to be the most superior model, achieving a peak validation accuracy of **75%**. This underscores the vital importance of capturing sequence dynamics and sequential dependencies across sequential frames for high-accuracy action recognition.
+* **Bi-LSTM Networks** achieved a moderate validation accuracy of **65%**. While theoretically better equipped for contextual pattern matching in both directions, its complex bidirectional structure was prone to slight overfitting due to dataset sample sizing constraints.
+* **Random Forest Classifiers** provided a solid traditional baseline with **63%** validation accuracy. Despite handling high-dimensional spaces efficiently on a low computing threshold, it naturally falls short because it cannot natively learn the frame-to-frame temporal motion paths critical to evaluating complex physical interactions.
+
+---
+
+### ⚠️ Current Limitations
+While the results are promising for automated security frameworks, the project highlights several key challenges:
+1. **Quality of Pose Estimation:** The framework heavily depends on the consistency of the upstream keypoint extraction. Imprecise tracking caused by camera occlusion, fast-paced motion blur, or poor ambient lighting directly shifts or drops vital keypoints.
+2. **Dataset Scale constraints:** The model was trained on a restricted pool of 300 total video samples (150 fight / 150 non-fight events). This limited size restricts the structural generalization boundaries of the deep learning layers.
+3. **Sequence Length Fixed Uniformity:** Uniformly sizing all inputs to exactly 30 frames means shorter sequences relied on zero-padding while longer streams were downsampled, which might skip or drop fine-grained action anomalies.
+4. **Scene Semantic Depth:** The model focuses purely on individual skeletal coordinate variations in isolation, missing deep environment semantics, multiple participant clusters, and chaotic background contexts found in real-world scenarios.
+
+---
+
+### 🚀 Future Research Directions
+To build upon this foundation and transform it into a production-grade surveillance tool, future iterations will focus on:
+* **Expanding Datasets:** Integrating larger scale public benchmarks (such as the UBI-Fights or Movie Fights datasets) to improve the feature robustness and overall generalization capabilities of the sequential deep learning models.
+* **Hybrid Multimodal Architectures:** Fusing structural pose-tracking matrices alongside raw optical flow or spatial vision models (like 3D CNNs) to unify motion context, environmental semantics, and human interaction cues.
+* **Adaptive Sampling:** Implementing modern dynamic padding or temporal segmentation algorithms to capture fluid frame patterns without risking key frame drops.
